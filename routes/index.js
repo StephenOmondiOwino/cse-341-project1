@@ -1,14 +1,7 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
 
-// Home route
 router.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-// About route
-router.get('/about', (req, res) => {
-  res.send('Hello World!');
+  res.send('Welcome to the CSE 341 API. Visit /api-docs for documentation.');
 });
 
 module.exports = router;

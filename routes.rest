@@ -1,0 +1,37 @@
+### Get all users
+GET http://localhost:3000/users
+
+### Get single user 
+GET http://localhost:3000/users/65f123abc123abc123abc123
+
+### Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "firstName": "Stephen",
+  "lastName": "Omondi",
+  "email": "stephen@gmail.com",
+  "password": "12345",
+  "favoriteColor": "blue",
+  "birthday": "2000-01-01"
+}
+
+### Update user (replace ID)
+PUT http://localhost:3000/users/65f123abc123abc123abc123
+Content-Type: application/json
+
+{
+  "firstName": "Updated",
+  "lastName": "User",
+  "email": "updated@gmail.com",
+  "password": "12345",
+  "favoriteColor": "green",
+  "birthday": "2001-01-01"
+}
+
+### Delete user (replace ID)
+DELETE http://localhost:3000/users/65f123abc123abc123abc123
+
+### Test frontend API
+GET http://localhost:3000/professional
