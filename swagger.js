@@ -5,8 +5,8 @@ const doc = {
     title: 'CSE 341 API',
     description: 'API for managing users'
   },
-  host: 'localhost:3000',
-  schemes: ['http']
+  host: 'https://cse-341-project1-1-hmti.onrender.com' || 'localhost:3000',
+  schemes: ['http', 'https']
 };
 
 const outputFile = './swagger-output.json';
